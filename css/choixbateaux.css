@@ -1,0 +1,282 @@
+@font-face {
+	font-family: "Azonix";
+	src: url("Azonix.otf") format('truetype');
+}
+
+@font-face {
+	font-family: "policeboutons";
+	src: url("PoetsenOne-Regular.ttf") format('truetype');
+}
+
+html {
+	margin:auto;
+	height:100%;
+	width:100%;
+	padding:0;
+}
+
+body {
+	position:absolute;
+	margin : 0;
+	padding:0;
+	background-image : url(../donnees/fond.jpg);
+	background-size : cover;
+	height: 100%;
+	width:100%;
+}
+
+* {
+  outline-style:none
+}
+
+#box {
+  margin-top: 1.5%;
+  margin-left:auto;
+  margin-right: auto;
+	width:87.5%;
+  height:92.5%;
+	display:flex;
+	flex-direction:column;
+}
+
+#changementypeplacement {
+	width:68.19px;
+	border: 0px;
+}
+
+#changementypeplacement:hover {
+	background-color: red;
+}
+
+#titre {
+  margin-left:auto;
+	margin-right:auto;
+	display:block;
+	background: #141414;
+	padding: 30px;
+	color:#fff;
+	text-align:center;
+	font-family:"Azonix";
+	font-size:2.5em;
+	-webkit-box-shadow: 7px 10px 25px -8px rgba(255,255,255,1);
+	-moz-box-shadow: 7px 10px 25px -8px rgba(255,255,255,1);
+	box-shadow: 7px 10px 25px -8px rgba(255,255,255,1);
+	color: #e0dfdc;
+    background-color: #333;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -1px 0 #fff,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9);
+	  width:50%;
+}
+
+#display {
+  margin-top: 1.25%;
+  display:flex;
+  flex-direction: row;
+}
+
+#bateaux {
+	margin-left:3%;
+  display:flex;
+  flex-direction: column;
+  width:20vw;
+  height:98.5%;
+  border:1px solid white;
+	font-family:"Azonix";
+	text-decoration: underline;
+	text-decoration-color: white;
+	padding-bottom: 1vh;
+}
+
+
+
+#titrebateaux {
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+  margin-top :5%;
+  width:auto;
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  font-family:"policeboutons";
+  font-size:1.5em;
+}
+
+#types {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:100%;
+	color:white;
+}
+
+.soustype {
+	text-align : center;
+}
+
+.emplacementcases {
+	margin-top:1vh;
+	display:flex;
+	flex-direction:row;
+	margin-left:auto;
+	margin-right: auto;
+	width:auto;
+}
+
+.casetype {
+	margin-left:1vw;
+	width:50px;
+	height:50px;
+	border:1px solid white;
+}
+
+#plateau {
+	color:white;
+  margin-left: auto;
+  margin-right: auto;
+  width:750px;
+  height:750px;
+  border:1px solid black;
+	display:flex;
+	flex-direction:column;
+}
+
+.ligne {
+	border:1px solid black;
+	width:750px;
+	height:66.2px;
+	display:flex;
+	flex-direction:row;
+}
+
+#lettres {
+	display:flex;
+	flex-direction:row;
+}
+
+.casenormal_paschoisi,.casenormal_choisie {
+	font-family:"Azonix";
+	width:68.2px;
+	height:68.2px;
+	border:1px solid black;
+	text-align:center;
+	vertical-align: middle;
+	line-height: normal;
+	font-size:2.7em;
+	padding:0;
+	opacity:0.8;
+	background-color: white;
+	transition:0.1s;
+}
+
+.casenumeroplateau {
+	font-family:"Azonix";
+	width:66.2px;
+	height:66.2px;
+	border:1px solid black;
+	text-align:center;
+	vertical-align: middle;
+	line-height: normal;
+	font-size:2.7em;
+}
+
+#bateaux input {
+	margin-top:2vh;
+	font-family:"policeboutons";
+	width:auto;
+	height:auto;
+	font-size:1.3em;
+	background-color:white;
+	font-style: italic;
+}
+
+#bateaux input:hover {
+	text-decoration: underline;
+	text-decoration-color: black;
+	transition:0.4s;
+}
+
+#lettres div,button {
+	font-family:"Azonix";
+	width:66.2px;
+	height:66.2px;
+	border:1px solid black;
+	text-align:center;
+	vertical-align: middle;
+	line-height: normal;
+	font-size:2.7em;
+}
+
+.dejachoisi {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.paschoisi {
+	text-decoration: none;
+	cursor:pointer;
+}
+
+#skip_choixbateau {
+	font-size:1.3em;
+	position:fixed;
+	width:30%;
+	padding:5px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.torpilleur,.contretorpilleur,.sousmarin,.porteavions,.croiseur {
+	background-color: white;
+}
+
+#plateau button:not(.casenumeroplateau) {
+	font-family:"Azonix";
+	width:68.2px;
+	height:68.2px;
+	border:1px solid black;
+	text-align:center;
+	vertical-align: middle;
+	line-height: normal;
+	font-size:2.7em;
+	padding:0;
+	opacity:0.8;
+	transition:0.1s;
+}
+
+#timer {
+	position:fixed;
+}
+
+#jouer {
+	width:15%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+button img {
+	width:100%;
+	height:100%;
+}

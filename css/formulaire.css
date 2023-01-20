@@ -1,0 +1,240 @@
+@font-face {
+	font-family: "Azonix";
+	src: url("Azonix.otf") format('truetype');
+}
+
+@font-face {
+	font-family: "policeboutons";
+	src: url("PoetsenOne-Regular.ttf") format('truetype');
+}
+
+html {
+	margin:auto;
+	height:100%;
+	width:100%;
+	padding:0;
+}
+
+body {
+	position:absolute;
+	margin : 0;
+	padding:0;
+	background-image : url(../donnees/fond.jpg);
+	background-size : cover;
+	height: 100%;
+	width:100%;
+}
+
+* {
+  outline-style:none
+}
+
+#titre {
+	margin-left:auto;
+	margin-right:auto;
+	background: #141414;
+	padding: 15px;
+	color:#fff;
+	margin-top:10%;
+	text-align:center;
+	font-family:"Azonix";
+	font-size:1.8em;
+	-webkit-box-shadow: 7px 10px 25px -8px rgba(255,255,255,1);
+	-moz-box-shadow: 7px 10px 25px -8px rgba(255,255,255,1);
+	box-shadow: 7px 10px 25px -8px rgba(255,255,255,1);
+	color: #e0dfdc;
+    background-color: #333;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -1px 0 #fff,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9);
+	  width:20%;
+}
+
+#retour {
+	margin-left:1vw;
+	margin-top:1.5vh;
+	position:absolute;
+	width:75px;
+	height:75px;
+	background: #ffffff;
+	padding:5px;
+	border: 4px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+
+#retour input {
+	width:100%;
+	height:100%;
+}
+
+#retour img {
+	width:100%;
+	height:100%;
+}
+
+#retour:hover {
+	cursor:pointer;
+	color: white !important;
+	background: rgb(34, 107, 132);
+	border-color: rgb(34, 107, 132) !important;
+	transition: all 0.4s ease 0s;
+}
+
+#formulaire {
+	margin-top:2.5%;
+	margin-left: auto;
+	margin-right: auto;
+	width:30%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 20px;
+	border: 4px solid #494949 !important;
+}
+
+#formulaire div {
+  margin-left:5%;
+}
+
+#formulaire input[type="button"] {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top :5%;
+  width:auto;
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  font-family:"policeboutons";
+  font-size:1.5em;
+}
+
+#formulaire input[type="button"]:hover {
+  cursor:pointer;
+	color: white !important;
+	background: rgb(34, 107, 132);
+	border-color: rgb(34, 107, 132) !important;
+	transition: all 0.4s ease 0s;
+}
+
+#formulaire input[type="text"] {
+  text-align:center;
+  margin-top :5%;
+  width:40%;
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  border: 4px solid #494949 !important;
+  transition: all 0.4s ease 0s;
+  font-family:"policeboutons";
+  font-size:1.5em;
+}
+
+#choixcouleur {
+	vertical-align: middle;
+  display:flex;
+  flex-direction: row;
+}
+
+#choixcouleur button {
+  margin-top:6.5%;
+  border: 2px solid #494949 !important;
+  width:25px;
+  height:25px;
+  cursor:pointer;
+}
+
+#choixcouleur button:not(.rouge) {
+    margin-left:5%;
+}
+
+#choixcouleur button:active {
+  border: 2px solid #494949 !important;
+}
+
+#boutoncouleur {
+  margin-left:14%;
+  margin-top :5%;
+  width:auto;
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  font-family:"policeboutons";
+  font-size:1.5em;
+}
+
+#choixpseudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#rouge {
+  background-color: red;
+}
+
+#bleu {
+  background-color: blue;
+}
+
+#violet {
+  background-color: purple;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#vert {
+  background-color: green;
+}
+
+#boutonchoixbateaux {
+	margin-left:auto;
+  margin-right:auto;
+  margin-top :5%;
+  width:auto;
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  font-family:"policeboutons";
+  font-size:1.5em;
+}
+
+#boutonchoixbateaux:hover {
+	cursor:pointer;
+	color: white !important;
+	background: rgb(34, 107, 132);
+	border-color: rgb(34, 107, 132) !important;
+	transition: all 0.4s ease 0s;
+}

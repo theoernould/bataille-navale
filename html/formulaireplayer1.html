@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--définition du codage des caractères-->
+	<meta http-equiv="Content-type" content="text/html" charset="UTF-8"/>
+	<!--donne le nom de l'onglet-->
+	<title>Projet</title>
+	<!--permet d'accéder au fichier CSS-->
+	<link rel="stylesheet" href="../css/formulaire.css"/>
+	<script src="../javascript/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../javascript/formulaire.js"></script>
+	</head>
+	<body>
+    <a id ="retour" href="../index.html">
+			<img src="../donnees/back.png"/>
+    </a>
+    <div id="titre">Joueur 1</div>
+    <div id="formulaire">
+      <div id="choixpseudo">
+        <input type="text" id="pseudo" placeholder="Votre pseudo"/>
+        <input type="button" id="boutonpseudo" value="Confirmer"/>
+      </div>
+      <div id="choixcouleur">
+        <button type ="submit" class="color" id="rouge"></button>
+        <button type ="submit" class="color" id="bleu"></button>
+        <button type ="submit" class="color" id="vert"></button>
+        <button type ="submit" class="color" id="orange"></button>
+        <button type ="submit" class="color" id="violet"></button>
+        <input type="button" id="boutoncouleur" value="Confirmer"/>
+      </div>
+			<input type="button" id="boutonchoixbateaux" value="Placer mes bateaux"/>
+    </div>
+	</body>
+</html>
